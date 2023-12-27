@@ -1,0 +1,25 @@
+.section-client {
+   position: relative;
+&::after {
+    position: absolute;
+    content: "";
+    width: 1470px;
+    height: 2px;
+    background-color: $accent-color;
+   
+}
+&__img {
+    width: 323px;
+    height: 358px;
+    margin-bottom: 124px;
+}
+&__list {
+& {
+    @include list();
+}
+    display: flex;
+ justify-content: center;
+ gap: 18px;
+   
+}
+}

@@ -1,0 +1,112 @@
+.hero {
+position: relative;
+
+&__piony {
+position: absolute;
+background-image: url(/image/piony-5.png) ;
+background-repeat: no-repeat;
+background-size: contain;
+width: 768px;
+height: 640px;
+margin-left: 650px;
+margin-top: -275px;
+z-index: 1;
+
+}
+    &__tittle {
+    font-family: Playfair Display;
+    font-size: 48px;
+    font-style: italic;
+    font-weight: 500;
+    line-height: 1.25;
+    color: $accent-color;
+    margin-top: 109px;
+  
+    }
+    &__span {
+    font-family: Playfair Display;
+    font-size: 86px;
+    font-weight: 400;
+    line-height: 60px;
+    text-transform: uppercase;
+    color: $text-color;
+    margin-left: 110px;
+    margin-right: 24px;
+    display: inline-block;
+    margin-top: 12px;
+    }
+    &__text {
+    font-family: Source Sans 3;
+    font-size: 24px;
+    font-weight: 400;
+    text-transform: capitalize;
+    color: $text-color;
+    margin-top: 24px;
+    margin-bottom: 42px;
+    margin-left: 110px;
+   
+    }
+    &__button {
+    margin-left: 110px;
+    padding: 16px 32px;
+    justify-content: center;
+    align-items: center;
+    font-family: Source Sans 3;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: normal;
+    width: 437px;
+    border-radius: 15px;
+    background-color: $accent-color;
+    color: $text-color;
+    cursor: pointer;
+    border: none;
+    transition-duration: 250ms;
+    &:hover,
+    &:focus {
+        background-color: #d688a0;
+    }
+    }
+    &::before {
+        position: absolute;
+        content: "";
+        border-radius: 485px;
+        border: 2px solid;
+        color: $accent-color;
+        width: 480px;
+        height: 480px;
+        margin-left: 650px;
+        margin-top: 250px;
+    }
+
+ &__item {
+display: flex;
+flex-direction: column;
+align-items: center;
+cursor: pointer;
+
+& {
+     @include list();
+    }
+ }
+ &__list-advantages {
+    margin-top: 440px;
+    padding-bottom: 50px;
+    display: flex;
+    justify-content: center;
+    gap: 124px;
+}
+ &__text-advantage {
+    color: #FFF;
+    font-family: Source Sans Pro;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: normal;
+    text-transform: lowercase;
+    width: 201px;
+    text-align: center;
+    margin-top: 3px;
+ }
+    
+
+}
