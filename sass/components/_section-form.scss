@@ -1,154 +1,181 @@
 .section-form {
     padding-top: 132px;
-    
-&__section-tittle--3 {
-    right: -27px;
-    margin-bottom: 140px;
-    &::after {
-    position: absolute;
-    content: "";
-    width: 820px;
-    height: 2px;
-    background-color: $accent-color;
-    bottom: 1px;
-    left: -68px;
-}
-}
 
-&__img-cont {
-   position: relative;
-   background-image: url(/image/piony-img2.png);
-   background-repeat: no-repeat;
-   background-size: contain;
-   width: 776px;
-   height: 1104px;
-}
-&__container {
-   position: absolute;
-   z-index: 1;
-}
-&__div {
-    width: 1440px;
-    height: 564px;
-    background-color: rgba(185, 106, 127, 0.70);
-    border-radius: 10px;
-    display: flex;
-    padding-top: 36px;
-    padding-left: 115px;
-    padding-right: 124px;
-    margin-bottom: 121px;
-}
-&__cont-2 {
-    margin-right: auto;
-}
-&__label {
-    color: #F5EBEB;
-    font-family: Source Sans 3;
-    font-size: 32px;
-    font-weight: 400;
-    width: 347px;
-    margin-bottom: 40px;
-}
-&__span {
-    color: #FFF;
-    font-family: Source Sans 3;
-    font-size: 32px;
-    font-style: normal;
-    font-weight: 600;
-    line-height: normal;
-}
-&__form {
-    display: flex;
-    flex-direction: column;
-    gap: 38px;
-    border-radius: 15px;
-    margin-bottom: 40px;
-}
-&__input {
-    width: 416px;
-    height: 70px;
-    border-radius: 15px;
-    border: none;
-    padding-left: 38px;
-    
+    &__section-tittle--3 {
+        right: -27px;
+        margin-bottom: 140px;
 
-&::placeholder {
-    color: #8D8D8D;
-    font-family: Source Sans 3;
-    font-size: 20px;
-    font-weight: 700;
-}
-}
-&__sign {
-    position: relative;
-&::before {
-    position: absolute;
-    content: "";
-    width: 1px;
-    height: 70px;
-    background-color: #8F8F8F;
-    right: 90px;
-}
-}
-&__icon {
-    position: absolute;
-    right: 35px;
-    top: 20px;
-   
-   
-}
-&__label-2 {
-    color: #FFF;
-    text-align: center;
-    font-family: Source Sans 3;
-    font-size: 32px;
-    font-weight: 400;
-    margin-bottom: 50px;
-}
-&__list {
-    & {
-        @include list();
+        &::after {
+            position: absolute;
+            content: "";
+            width: 820px;
+            height: 2px;
+            background-color: $accent-color;
+            bottom: 1px;
+            left: -68px;
+        }
     }
-}
-&__item {
-    display: flex;
-    gap: 32px;
-&:not(:first-child) {
-    margin-bottom: 40px;
-}
-&:first-child {
-    margin-bottom: 10px;
-}
-}
-&__text {
-    color: rgba(255, 255, 255, 0.71);
-    font-family: Source Sans 3;
-    font-size: 20px;
-    font-weight: 400;
-    width: 389px;
-}
-&__btn {
-    color: #FFF;
-    font-family: Source Sans 3;
-    font-size: 24px;
-    font-weight: 400;
-    background-color: $accent-color;
-    padding: 16px 116px;
-    border: none;
-    border-radius: 15px;
-    cursor: pointer;
-}
-&__section-tittle--4 {
-    margin-left: 950px;
-    margin-bottom: 140px;
-    position: relative;
-&::after {
+
+    &__img-cont {
+        position: relative;
+        background-image: url(/image/piony-img2.png);
+        background-repeat: no-repeat;
+        background-size: contain;
+        width: 776px;
+        height: 1104px;
+    }
+
+    &__container {
         position: absolute;
-        content: "";
-        width: 497px;
-        height: 2px;
+        z-index: 1;
+    }
+
+    &__div {
+        width: 1440px;
+        height: 564px;
+        background-color: rgba(185, 106, 127, 0.70);
+        border-radius: 10px;
+        display: flex;
+        padding-top: 36px;
+        padding-left: 115px;
+        padding-right: 124px;
+        margin-bottom: 121px;
+
+    }
+
+    &__cont-2 {
+        margin-right: auto;
+    }
+
+    &__label {
+        color: #F5EBEB;
+        font-family: Source Sans 3;
+        font-size: 32px;
+        font-weight: 400;
+        width: 347px;
+        margin-bottom: 40px;
+    }
+
+    &__span {
+        color: #FFF;
+        font-family: Source Sans 3;
+        font-size: 32px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: normal;
+    }
+
+    &__form {
+        display: flex;
+        flex-direction: column;
+        gap: 38px;
+        border-radius: 15px;
+        margin-bottom: 40px;
+    }
+
+    &__input {
+        width: 416px;
+        height: 70px;
+        border-radius: 15px;
+        border: none;
+        padding-left: 38px;
+
+
+        &::placeholder {
+            color: #8D8D8D;
+            font-family: Source Sans 3;
+            font-size: 20px;
+            font-weight: 700;
+        }
+    }
+
+    &__sign {
+        position: relative;
+
+        &::before {
+            position: absolute;
+            content: "";
+            width: 1px;
+            height: 70px;
+            background-color: #8F8F8F;
+            right: 90px;
+        }
+    }
+
+    &__icon {
+        position: absolute;
+        right: 35px;
+        top: 20px;
+
+
+    }
+
+    &__label-2 {
+        color: #FFF;
+        text-align: center;
+        font-family: Source Sans 3;
+        font-size: 32px;
+        font-weight: 400;
+        margin-bottom: 50px;
+    }
+
+    &__list {
+        & {
+            @include list();
+        }
+    }
+
+    &__item {
+        display: flex;
+        gap: 32px;
+
+        &:not(:first-child) {
+            margin-bottom: 40px;
+        }
+
+        &:first-child {
+            margin-bottom: 10px;
+        }
+    }
+
+    &__text {
+        color: rgba(255, 255, 255, 0.71);
+        font-family: Source Sans 3;
+        font-size: 20px;
+        font-weight: 400;
+        width: 389px;
+    }
+
+    &__btn {
+        color: #FFF;
+        font-family: Source Sans 3;
+        font-size: 24px;
+        font-weight: 400;
         background-color: $accent-color;
-        bottom: 1px;
-}
-}
+        padding: 16px 116px;
+        border: none;
+        border-radius: 15px;
+        cursor: pointer;
+        transition-duration: 250ms;
+
+        &:hover,
+        &:focus {
+            background-color: #d688a0;
+        }
+    }
+
+    &__section-tittle--4 {
+        margin-left: 950px;
+        margin-bottom: 140px;
+        position: relative;
+
+        &::after {
+            position: absolute;
+            content: "";
+            width: 497px;
+            height: 2px;
+            background-color: $accent-color;
+            bottom: 1px;
+        }
+    }
 }

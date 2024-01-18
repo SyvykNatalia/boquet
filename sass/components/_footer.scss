@@ -1,75 +1,92 @@
 .footer {
     padding-top: 40px;
     padding-bottom: 50px;
-&__flex {
-    display: flex;
-    justify-content: center;
-    gap: 250px;
-}
-&__item {
-    color: #F5EBEB;
-    font-family: Source Sans 3;
-    font-size: 20px;
-    font-weight: 400;
-    font-variant: small-caps;
-}
-&__list {
-    display: flex;
-    flex-direction: column;
-    gap: 32px;
-& {
-        @include list();
+
+    &__flex {
+        display: flex;
+        // justify-content: space-around;
+
+
     }
-}
-&__img {
-    width: 88px;
-    height: 84px;
-    
-}
-&__text-img {
-    color: #F5EBEB;
-    font-family: Spline Sans;
-    font-size: 24px;
-    font-weight: 400;
-    text-transform: uppercase;
-   
-}
-&__logo {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-   
-}
-&__item-adress {
-    color: #FFF;
-    font-family: Source Sans 3;
-    font-size: 20px;
-    font-weight: 400;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-&__link {
-    color: #FFF;
-    text-align: center;
-    font-family: Source Sans 3;
-    font-size: 24px;
-    font-weight: 400;
-    text-transform: capitalize;
-    text-decoration: none;
-}
-&__list-adress {
-    display: flex;
-    flex-direction: column;
-    gap: 24px;
-& {
-    @include list();
-}
-}
-&__soc-list {
-    display: flex;
-    justify-content: center;
-    gap: 46px;
-    margin-top: 32px;
-}
+
+    &__item {
+        color: #F5EBEB;
+        font-family: Source Sans 3;
+        font-size: 20px;
+        font-weight: 400;
+        font-variant: small-caps;
+    }
+
+    &__list {
+        display: flex;
+        flex-direction: column;
+        gap: 32px;
+        margin-left: 140px;
+        margin-right: 330px;
+
+        & {
+            @include list();
+        }
+    }
+
+    &__img {
+        width: 88px;
+        height: 84px;
+
+    }
+
+    &__text-img {
+        color: #F5EBEB;
+        font-family: Spline Sans;
+        font-size: 24px;
+        font-weight: 400;
+        text-transform: uppercase;
+
+    }
+
+    &__logo {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+    }
+
+    &__item-adress {
+        color: #FFF;
+        font-family: Source Sans 3;
+        font-size: 20px;
+        font-weight: 400;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    &__link {
+        color: #FFF;
+        text-align: center;
+        font-family: Source Sans 3;
+        font-size: 24px;
+        font-weight: 400;
+        text-transform: capitalize;
+        text-decoration: none;
+    }
+
+    &__list-adress {
+        display: flex;
+        flex-direction: column;
+        gap: 24px;
+        margin-left: 270px;
+
+        & {
+            @include list();
+        }
+    }
+
+    &__soc-list {
+        display: flex;
+        justify-content: center;
+        gap: 46px;
+        margin-top: 32px;
+        cursor: pointer;
+    }
 }

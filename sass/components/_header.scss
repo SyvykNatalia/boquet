@@ -1,35 +1,38 @@
 .header {
 
-&__logo {
-    width: 126px;
-    height: 63px;
-    cursor: pointer;
-}
-&__item {
-    font-family: Source Sans 3;
-    font-size: 20px;
-    font-weight: 400;
-    color: $text-color;
-    transition-duration: 250ms;
-    cursor: pointer;
-    &:hover,
-    &:focus {
-    transform: scale(1.1)
-    
+    &__logo {
+        width: 126px;
+        height: 63px;
+        cursor: pointer;
     }
-& {
-    @include list();
-}
-}
-&__nav {
-    display: flex;
-    justify-content: space-between;
-    padding-top: 24px;
-    align-items: center;
-}
-&__list {
-    display: flex;
-    gap: 32px;
-}
 
+    &__item {
+        font-family: Source Sans 3;
+        font-size: 20px;
+        font-weight: 400;
+        color: $text-color;
+        transition-duration: 250ms;
+        cursor: pointer;
+
+        &:hover,
+        &:focus {
+            transform: scale(1.1)
+        }
+
+        & {
+            @include list();
+        }
+    }
+
+    &__nav {
+        display: flex;
+        justify-content: space-between;
+        padding-top: 24px;
+        align-items: center;
+    }
+
+    &__list {
+        display: flex;
+        gap: 32px;
+    }
 }
